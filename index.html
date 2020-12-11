@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVEx</title>
+    <link rel="stylesheet" href="./dist/css/cvex-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://e2eresearch.com/swteam/McKinsey/CVEx_Website/OverlayScrollbars.css"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <span style="display: none;" id="jsonData">
+        {
+            "headerData": {
+                "logo": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/mck-logo.svg",
+                "sublogo": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/mck-logo.svg",
+                "leftPanelOpen": "false"
+            },
+            "cvexEvent": {
+                "heading": "CVEx Calendar",
+                "eventDetail": [{
+                    "WebinarNo": "Webinar 1",
+                    "headerTitle": "Overview (including Outbound)",
+                    "date": "24<sup>th</sup> Nov 2020",
+                    "outofdate": "true",
+                    "linkUrl": ""
+                }, {
+                    "WebinarNo": "Webinar 2",
+                    "headerTitle": "Retention & Outbound",
+                    "date": "15<sup>th</sup> Dec 2020",
+                    "outofdate": "false",
+                    "linkUrl": ""
+                }, {
+                    "WebinarNo": "Webinar 3",
+                    "headerTitle": "Inbound",
+                    "date": "26<sup>th</sup> Jan 2021",
+                    "outofdate": "false",
+                    "linkUrl": ""
+                }, {
+                    "WebinarNo": "Webinar 4",
+                    "headerTitle": "Lead Generation",
+                    "date": "17<sup>th</sup> Feb 2021",
+                    "outofdate": "false",
+                    "linkUrl": ""
+                }, {
+                    "WebinarNo": "Webinar 5",
+                    "headerTitle": "Analytics in CVEx",
+                    "date": "10<sup>th</sup> Mar 2021",
+                    "outofdate": "false",
+                    "linkUrl": ""
+                }, {
+                    "WebinarNo": "Webinar 6",
+                    "headerTitle": "Service to Sales",
+                    "date": "7<sup>th</sup> Apr 2021",
+                    "outofdate": "false",
+                    "linkUrl": ""
+                }]
+            },
+            "cvexDetail": {
+                "heading": "CVEx Webinars",
+                "rightBtnText": "EPR self-assessment tool",
+                "rightBtnlink": "https://cvex.com/",
+                "eventDetail": [{
+                    "headerTitle": "Overview (including Outbound)",
+                    "companyLogo": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/sunrise-logo.png",
+                    "evntDetail": "Hear how Sunrise (Swiss TelCo company) boost top-line growth from customer insights, e.g. building an agile campaign engine to increase sales including outbound.",
+                    "date": "24<sup>th</sup> Nov 2020",
+                    "time": "16:30-17:30 CET",
+                    "name": "Viktor Toth",
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Viktor_Toth.png",
+                    "btnText": "Debrief",
+                    "btnValue": "debrief",
+                    "debriefUrl": "https://www.linkedin.com/pulse/40-base-sales-from-cvm-channel-excellence-sunrise-veit-kment/?trackingId=X6%2FxJDiJT8%2B41cWQzLy7FA%3D%3D",
+                    "linkUrl": "Web1Reg"
+                }, {
+                    "headerTitle": "Retention & Outbound",
+                    "companyLogo": "",
+                    "evntDetail": "Find out how a major payment service provider achieved substantial increase in agent sales performance and a new way how to think about retention as a value driver",
+                    "date": "15<sup>th</sup> Dec 2020",
+                    "time": "15:00-16:30 CET",
+                    "name": "Kristian Nygaard<br/>Johansen",
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Kristian_Nygaard_Johansen.png",
+                    "btnText": "Register",
+                    "btnValue": "register",
+                    "debriefUrl": "",
+                    "linkUrl": "Web2Reg"
+                }, {
+                    "headerTitle": "Inbound",
+                    "companyLogo": "",
+                    "evntDetail": "Learn how a pan-European leader in online traveling increased sales conversion in inbound telesales through sales capability building and insight steering",
+                    "date": "26<sup>th</sup> Jan 2021",
+                    "time": "16:00-17:00 CET",
+                    "name": "",
+                    "userPic": "",
+                    "btnText": "Register",
+                    "btnValue": "register",
+                    "debriefUrl": "",
+                    "linkUrl": "Web3Reg"
+                }, {
+                    "headerTitle": "Lead Generation",
+                    "companyLogo": "",
+                    "evntDetail": "Hear how a European energy company has setup an activation warroom to boost their lead pipeline for higher omnichannel sales",
+                    "date": "17<sup>th</sup> Feb 2021",
+                    "time": "16:00-17:00 CET",
+                    "name": "",
+                    "userPic": "",
+                    "btnText": "Register",
+                    "btnValue": "register",
+                    "debriefUrl": "",
+                    "linkUrl": "Web4Reg"
+                }, {
+                    "headerTitle": "Analytics in CVEx",
+                    "companyLogo": "",
+                    "evntDetail": "Get the latest thinking how advanced analytics can help understanding your customer better, develop hyper-personalized communication and identify value opportunities in lead conversion",
+                    "date": "10<sup>th</sup> Mar 2021",
+                    "time": "16:00-17:00 CET",
+                    "name": "",
+                    "userPic": "",
+                    "btnText": "Register",
+                    "btnValue": "register",
+                    "debriefUrl": "",
+                    "linkUrl": "Web5Reg"
+                }, {
+                    "headerTitle": "Service to Sales",
+                    "companyLogo": "",
+                    "evntDetail": "Leverage the experience from an US insurance company to boost revenues from services calls through a tailored sales transformation program",
+                    "date": "7<sup>th</sup> Apr 2021",
+                    "time": "16:00-17:00 CET",
+                    "name": "",
+                    "userPic": "",
+                    "btnText": "Register",
+                    "btnValue": "register",
+                    "debriefUrl": "",
+                    "linkUrl": "Web6Reg"
+                }]
+            },
+            "whatCVEx": {
+                "heading": "What is CVEx?",
+                "KnowDetail": [{
+                    "titleDetail": "Value creation",
+                    "textDetail": "A concept to treat every customer touchpoint as a revenue opportunity to improve overall value generation from call and digital channels"
+                }, {
+                    "titleDetail": "Sales execution",
+                    "textDetail": "A sales execution engine that delivers unrivaled customer experience and maximizes sales performance across all channels"
+                }, {
+                    "titleDetail": "Holistic approach",
+                    "textDetail": "A holistic approach to maximize value creation from call and digital channels with the right strategy, tools and sales engine to engage customers and convert the lead"
+                }]
+            },
+            "cvexMatters": {
+                "heading": "Why CVEx matters?",
+                "matressDetail": [{
+                    "detailTitle": "Saturated markets",
+                    "textDetail": "Limited options for companies to grow the topline in highly competitive markets with little or no market growth and rising customer acquisition cost"
+                }, {
+                    "detailTitle": "Shift to call and digital channels",
+                    "textDetail": "New customer shopping patterns and accelerated shift to call and digital channels requires new concepts to sell successfully"
+                }, {
+                    "detailTitle": "Revenue opportunity",
+                    "textDetail": "Every customer touchpoint is a unique opportunity to increase customer value and boost revenues"
+                }]
+            },
+            "cvexPost": {
+                "postDetail": [{
+                    "detailTitle": "A wide range of industries can benefit from CVEx",
+                    "detailText": "CVEx applies to 5 business models and a wide range of industries. This includes contract based business models (e.g. insurances), subscription based models (e.g. cloud services), platform based models (e.g. market places), full service leasing and aftersales service",
+                    "readmoreText": "",
+                    "linkUrl": ""
+                }, {
+                    "detailTitle": "CVEx offers 10-20% in topline growth",
+                    "detailText": "CVEx is a tested approach that has proven to increase topline 10-20% and bring 5-10% in efficiency gains through target and personalized offers, focus on the right channels and customers and rigorous sales execution",
+                    "readmoreText": "",
+                    "linkUrl": ""
+                }]
+            },
+            "cvexFoundations": {
+                "heading": "CVEx foundations",
+                "foundationsDetail": [{
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/image1.png",
+                    "link": "#"
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/image2.png",
+                    "link": "#"
+                }]
+            },
+            "cvexExperts": {
+                "heading": "Meet our experts",
+                "subhead": "How to get in contact",
+                "beforeEmailText": "Please send us an email if you want to find out more about CVEx - <u>Customer_Value_Execution@mckinsey.com</u>",
+                "custemailId": "",
+                "mailto": "",
+                "KnowDetail": [{
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Julian_Raabe.png",
+                    "userName": "Julian Raabe",
+                    "userProfile": "Partner",
+                    "emailId": ""
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Konstantin_Pell.png",
+                    "userName": "Konstantin Pell",
+                    "userProfile": "Associate Partner",
+                    "emailId": ""
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Veit_Kment.png",
+                    "userName": "Veit Kment",
+                    "userProfile": "Associate Partner",
+                    "emailId": ""
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Lutz_Borchardt.png",
+                    "userName": "Lutz Borchardt",
+                    "userProfile": "Engagement Manager",
+                    "emailId": ""
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Simon_Rubling.png",
+                    "userName": "Simon Rubling",
+                    "userProfile": "Expert",
+                    "emailId": ""
+                }, {
+                    "userPic": "https://e2eresearch.com/swteam/McKinsey/CVEx_Website/Arian_Meyer.png",
+                    "userName": "Arian Meyer",
+                    "userProfile": "Senior Associate",
+                    "emailId": ""
+                }]
+            },
+            "registration": {
+                "regitrationtxt": "Registration",
+                "nameTxt": "Name *",
+                "emailidtxt": "Email ID *",
+                "companytxt": "Company *",
+                "positontxt": "Position",
+                "phonenotxt": "Phone No.",
+                "registertxt": "Register"
+            }
+        }
+    </span>
+
+    
+    <!--<div id="mycvex-poup" class="cvex-poup">-->
+
+
+    <div id="main-wrapper">
+        <cvex_header :json-data="jsondata"></cvex_header>
+        <cvex-events :json-data="jsondata"></cvex-events>
+        <cvex_footer :json-data="jsondata"></cvex_footer>
+    </div>
+    <span class="inputarea" style="display: none; position: absolute; top: 10px; left: 10px;">
+        <input type="text" id="Web1Reg_Name"/>
+        <input type="text" id="Web1Reg_Email"/>
+        <input type="text" id="Web1Reg_Company"/>
+        <input type="text" id="Web1Reg_Position"/>
+        <input type="text" id="Web1Reg_PhoneNo"/>
+        <input type="text" id="Web2Reg_Name"/>
+        <input type="text" id="Web2Reg_Email"/>
+        <input type="text" id="Web2Reg_Company"/>
+        <input type="text" id="Web2Reg_Position"/>
+        <input type="text" id="Web2Reg_PhoneNo"/>
+        <input type="text" id="Web3Reg_Name"/>
+        <input type="text" id="Web3Reg_Email"/>
+        <input type="text" id="Web3Reg_Company"/>
+        <input type="text" id="Web3Reg_Position"/>
+        <input type="text" id="Web3Reg_PhoneNo"/>
+        <input type="text" id="Web4Reg_Name"/>
+        <input type="text" id="Web4Reg_Email"/>
+        <input type="text" id="Web4Reg_Company"/>
+        <input type="text" id="Web4Reg_Position"/>
+        <input type="text" id="Web4Reg_PhoneNo"/>
+        <input type="text" id="Web5Reg_Name"/>
+        <input type="text" id="Web5Reg_Email"/>
+        <input type="text" id="Web5Reg_Company"/>
+        <input type="text" id="Web5Reg_Position"/>
+        <input type="text" id="Web5Reg_PhoneNo"/>
+        <input type="text" id="Web6Reg_Name"/>
+        <input type="text" id="Web6Reg_Email"/>
+        <input type="text" id="Web6Reg_Company"/>
+        <input type="text" id="Web6Reg_Position"/>
+        <input type="text" id="Web6Reg_PhoneNo"/>
+    </span>
+<style>
+    .inputarea input{width:20%; float: left;}
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://e2eresearch.com/swteam/McKinsey/Assessment-app/vue.js"></script>
+    <script src="https://e2eresearch.com/swteam/McKinsey/Assessment-app/OverlayScrollbars.min.js"></script>
+    <script src="./dist/js/production/cvexEvents.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+</html>
