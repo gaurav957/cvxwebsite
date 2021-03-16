@@ -1,0 +1,51 @@
+%btn-property {
+  display: inline-block;
+  padding: 8px 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+%full-btn-property {
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.cst-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $bg-d9;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: $lightblack;
+  font-size: 0.875em;
+  display: inline-block;
+  cursor: pointer;
+  &.regisetr {
+    background: $selectd;
+    color: $white;
+  }
+}
+a.cst-btn.register {
+  background: #2251ff;
+  color: #fff;
+}
+.cst-btn.signup {
+  background: #0b285b;
+  color: #fff;
+}
+
+.cvex-btn {
+  @extend %full-btn-property;
+  /*background-color: $selectd;*/
+  background-color: #0b285b;
+  color: $white;
+  transition: background-color 0.5s linear, color 0.5s linear;
+  @include transition(background-color 0.5s linear, color 0.5s linear);
+  &:hover {
+    background-color: $fd-47;
+  }
+}
